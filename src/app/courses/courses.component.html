@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row container" >
+        <div class="row course">
+            <div class=" course-content bg-success ">
+                <h5 class="course-name">{{CourseMaterial.course}}</h5>
+                <p><a href="#" class="course-material">{{CourseMaterial.material}}</a></p>
+                <p class="course-duration">{{CourseMaterial.duration}}</p>
+            </div>
+            <img class="course-image col" [src]="CourseMaterial.photo" alt="image" width="300" height="250">
+            <p class="course-progress"></p>
+        </div>
+    </div>
+</body>
+</html>
